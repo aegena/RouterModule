@@ -1,0 +1,108 @@
+CRouter {
+    pluginLogger = true
+    uploadArchive = true
+    notifyUser = true
+
+    modules = [
+            "module1"    : true,
+            "moduleName2": false
+    ]
+
+    maven = [
+            "pomName"       : "",
+            "description"   : "",
+            "packaging"     : "",
+            "websiteUrl"    : "",
+            "issueUrl"      : "",
+            "developerId"   : "",
+            "developerName" : "",
+            "developerEmail": ""
+    ]
+
+    oss = [
+            "release" : [
+                    "url"     : "url",
+                    "userName": "userName",
+                    "password": "password"
+            ],
+            "snapshot": [
+                    "url"     : "url",
+                    "userName": "userName",
+                    "password": "password"
+            ]
+    ]
+
+    message = [
+            "weChat"  : [
+                    "url"     : "",
+                    "userName": ""
+            ],
+            "dingTalk": [
+                    "url"     : "",
+                    "secret"  : "",
+                    "atAll"   : false,
+                    "mobiles" : [
+                            "121423423"
+                    ],
+                    "userName": ""
+            ],
+            "webHook" : [
+                    "url"     : "",
+                    "userName": ""
+            ]
+    ]
+    projects = [
+            "module1": [
+                    "git"      : "",
+                    "directory": "/Users/maweidong/Desktop/PluginTest/MyApplication2/module1",
+                    "branch"   : "",
+                    "maven"    : [
+                            "name"          : "module1",
+                            "group"         : "com.example.module1",
+                            "artifactId"    : "module1",
+                            "version"       : "0.0.1",
+                            "versionCode"   : "0.0.1-SNAPSHOT",
+                            "pomName"       : "",
+                            "description"   : "",
+                            "packaging"     : "aar",
+                            "websiteUrl"    : "",
+                            "issueUrl"      : "",
+                            "vcsUrl"        : "",
+                            "developerId"   : "1231",
+                            "developerName" : "",
+                            "developerEmail": ""
+                    ],
+                    "oss"      : [
+                            "release" : [
+                                    "url"     : "${System.getenv('HOME')}/repository/maven-release",
+                                    "userName": "",
+                                    "password": ""
+                            ],
+                            "snapshot": [
+                                    "url"     : "${System.getenv('HOME')}/repository/maven-snapshots",
+                                    "userName": "",
+                                    "password": ""
+                            ]
+                    ],
+                    "message"  : [
+                            "weChat"  : [
+                                    "url"     : "",
+                                    "userName": ""
+                            ],
+                            "dingTalk": [
+                                    "url"     : "",
+                                    "secret"  : "",
+                                    "atAll"   : false,
+                                    "mobiles" : [
+                                            "121423423"
+                                    ],
+                                    "userName": ""
+                            ],
+                            "webHook" : [
+                                    "url"     : "",
+                                    "userName": ""
+                            ]
+                    ]
+            ]
+    ]
+}
